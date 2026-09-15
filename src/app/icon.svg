@@ -1,8 +1,9 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="64" height="64" rx="14" fill="#081120"/>
-  <path d="M18 19h28" stroke="#22d3ee" stroke-width="4" stroke-linecap="round"/>
-  <path d="M18 32h20" stroke="#22d3ee" stroke-width="4" stroke-linecap="round"/>
-  <path d="M18 45h12" stroke="#22d3ee" stroke-width="4" stroke-linecap="round"/>
-  <path d="M41 42.5l4.2 4.2L55 35.5" stroke="#34d399" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M50 12l1.2 3.8H55l-3.1 2.2 1.2 3.8-3.1-2.4-3.1 2.4 1.2-3.8-3.1-2.2h3.8L50 12z" fill="#facc15"/>
+  <path d="M16 16h32a6 6 0 0 1 6 6v20a6 6 0 0 1-6 6H16a6 6 0 0 1-6-6V22a6 6 0 0 1 6-6z" stroke="#22d3ee" stroke-width="3"/>
+  <path d="M18 25h11" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M18 33h18" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M18 41h13" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M41 36.5l4 4L54 30" stroke="#34d399" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 9l2.3 4.7 5.2.8-3.8 3.7.9 5.2-4.6-2.4-4.6 2.4.9-5.2-3.8-3.7 5.2-.8L32 9z" fill="#22d3ee"/>
 </svg>
