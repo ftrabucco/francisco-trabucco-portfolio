@@ -5,15 +5,20 @@ import "../styles/globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Francisco Trabucco | QA Automation y SDET",
+  title: "Francisco Trabucco | QA Automation & SDET",
   description:
-    "Portfolio profesional de Francisco Trabucco, enfocado en QA Automation, SDET y calidad de software.",
+    "Professional portfolio for Francisco Trabucco, focused on QA Automation, SDET and software quality.",
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
   openGraph: {
     type: "website",
     siteName: "Francisco Trabucco",
-    title: "Francisco Trabucco | QA Automation y SDET",
+    title: "Francisco Trabucco | QA Automation & SDET",
     description:
-      "Portfolio profesional enfocado en QA Automation, SDET y calidad de software.",
+      "Professional portfolio focused on QA Automation, SDET and software quality.",
   },
 };
 
@@ -29,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="en">
       <body className={inter.className}>{children}</body>
     </html>
   );
