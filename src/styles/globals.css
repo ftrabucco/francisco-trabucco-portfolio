@@ -161,15 +161,15 @@
 
   .portfolio-photo-frame {
     position: relative;
-    width: min(100%, 340px);
+    width: min(100%, 240px);
     aspect-ratio: 4 / 5;
   }
 
   .portfolio-photo-frame::before {
     content: "";
     position: absolute;
-    inset: 22px -18px -18px 22px;
-    border: 3px solid rgba(34, 211, 238, 0.9);
+    inset: 16px -12px -12px 16px;
+    border: 2px solid rgba(34, 211, 238, 0.82);
     border-radius: 6px;
   }
 
@@ -178,6 +178,12 @@
     z-index: 1;
     border: 1px solid rgba(148, 163, 184, 0.24);
     box-shadow: 0 24px 56px rgba(8, 145, 178, 0.16);
+  }
+
+  @media (min-width: 1024px) {
+    .portfolio-photo-frame {
+      width: min(100%, 280px);
+    }
   }
 }
 
