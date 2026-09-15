@@ -35,7 +35,7 @@ const copy = {
     language: "Idioma",
     greeting: "Hola, soy",
     name: profile.name,
-    title: "SDET y QA Automation para sistemas backend confiables.",
+    title: "SDET y QA Automation para aplicaciones confiables.",
     description:
       "Tengo 7+ años construyendo automatización de pruebas para APIs, microservicios y productos distribuidos. Trabajo con Java, RestAssured, Playwright, Postman/Newman, TypeScript, SQL y CI/CD para acelerar feedback y mejorar la confianza de cada release.",
     availability:
@@ -110,7 +110,7 @@ const copy = {
     language: "Language",
     greeting: "Hello, I am",
     name: profile.name,
-    title: "SDET and QA Automation for reliable backend systems.",
+    title: "SDET and QA Automation for reliable applications.",
     description:
       "I have 7+ years of experience building test automation for APIs, microservices and distributed products. I work with Java, RestAssured, Playwright, Postman/Newman, TypeScript, SQL and CI/CD to accelerate feedback and improve release confidence.",
     availability:
