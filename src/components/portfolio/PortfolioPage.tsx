@@ -43,8 +43,10 @@ const copy = {
     viewResume: "Ver CV",
     contactMe: "Contactar",
     aboutTitle: "Sobre mi",
-    about:
-      "Trabajo desde una mirada tecnica y practica: entender el producto, detectar riesgos, automatizar lo repetible y hacer visible la calidad. Mi foco principal esta en API testing, frameworks de regresion, integracion con CI, reporting claro y colaboracion cercana con equipos de backend y producto.",
+    about: [
+      "Soy SDET y QA Automation Engineer con una base tecnica fuerte y una forma de trabajo muy orientada al producto. Me gusta entender como se comporta un sistema por dentro, detectar riesgos reales y transformar pruebas repetitivas en feedback confiable para el equipo.",
+      "Mi experiencia esta especialmente enfocada en API testing, microservicios, frameworks de regresion, integracion con CI/CD y reporting claro. Trabajo cerca de equipos de backend y producto, combinando criterio de QA con desarrollo para que cada release llegue con mas visibilidad, trazabilidad y confianza.",
+    ],
     skillsTitle: "Skills",
     experienceTitle: "Experiencia",
     projectsTitle: "Proyectos",
@@ -66,8 +68,10 @@ const copy = {
     viewResume: "View resume",
     contactMe: "Contact",
     aboutTitle: "About",
-    about:
-      "I work from a practical technical perspective: understand the product, detect risks, automate repeatable flows and make quality visible. My main focus is API testing, regression frameworks, CI integration, clear reporting and close collaboration with backend and product teams.",
+    about: [
+      "I am an SDET and QA Automation Engineer with a strong technical foundation and a product-oriented way of working. I enjoy understanding how systems behave internally, identifying real risks, and turning repetitive testing into reliable feedback for the team.",
+      "My experience is especially focused on API testing, microservices, regression frameworks, CI/CD integration, and clear reporting. I work closely with backend and product teams, combining QA judgment with development skills so every release has better visibility, traceability, and confidence.",
+    ],
     skillsTitle: "Skills",
     experienceTitle: "Experience",
     projectsTitle: "Projects",
@@ -338,7 +342,11 @@ export function PortfolioPage() {
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[320px_minmax(0,1fr)]">
           <SectionTitle icon={<Sparkles className="h-5 w-5" />} title={t.aboutTitle} />
           <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_340px]">
-            <p className="max-w-4xl text-xl font-semibold leading-9 text-slate-300">{t.about}</p>
+            <div className="max-w-4xl space-y-6 text-xl font-semibold leading-9 text-slate-300">
+              {t.about.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
             <div className="portfolio-photo-frame justify-self-start lg:justify-self-end">
               <img
                 src={profile.photo}
