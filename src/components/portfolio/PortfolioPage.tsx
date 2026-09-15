@@ -108,21 +108,31 @@ const skills = [
 const experience = [
   {
     role: "QA Automation / SDET",
+    company: "IncluIT",
     period: "2022 - Presente",
     detail:
-      "Modernizacion de suites de regresion API migrando Postman/Newman hacia frameworks Java + RestAssured, con clientes reutilizables, configuracion compartida, assertions estructuradas y reporting con Allure.",
+      "Modernizacion de suites de regresion API migrando Postman/Newman hacia frameworks Java + RestAssured. Trabajo con clientes reutilizables, configuracion compartida, assertions estructuradas, reporting con Allure e integracion con pipelines CI/CD.",
   },
   {
-    role: "Automation & CI/CD",
-    period: "IncluIT / equipos distribuidos",
+    role: "QA Automation Engineer",
+    company: "Cognizant",
+    period: "2021 - 2022",
     detail:
-      "Ejecucion diaria y manual de regresiones en SIT, STG y PROD mediante Jenkins y GitHub Actions, con foco en trazabilidad, evidencia de request/response y analisis rapido de fallas.",
+      "Automatizacion de pruebas con Python, Selenium y pytest, soporte a procesos CI/CD con Azure Repos, Azure Pipelines y Test Plans, y validaciones API e integraciones sobre microservicios.",
   },
   {
-    role: "Backend & Quality Engineering",
-    period: "Microservicios",
+    role: "QA Automation Engineer",
+    company: "Globant",
+    period: "2020 - 2021",
     detail:
-      "Contribucion en servicios backend con Node.js, Express, Java y Spring Boot, validando integraciones, datos, performance y comportamiento de sistemas distribuidos.",
+      "Automatizacion mobile para iOS y Android usando Java, Appium, Maven, TestNG y Cucumber. Ejecucion de suites smoke, sanity y regresion integradas con Jenkins y flujos de trabajo Git.",
+  },
+  {
+    role: "QA Analyst",
+    company: "Vates",
+    period: "2019 - 2020",
+    detail:
+      "Diseno y ejecucion de casos de prueba para aplicaciones web, testing exploratorio, funcional, regresion y end-to-end, con validacion de datos en PL/SQL y gestion de trabajo en Jira.",
   },
 ];
 
@@ -379,9 +389,12 @@ export function PortfolioPage() {
           <SectionTitle icon={<BriefcaseBusiness className="h-5 w-5" />} title={t.experienceTitle} />
           <div className="space-y-4">
             {experience.map((item) => (
-              <article key={item.role} className="portfolio-card rounded-md border border-slate-700 bg-slate-900/50 p-6">
+              <article key={`${item.company}-${item.role}`} className="portfolio-card rounded-md border border-slate-700 bg-slate-900/50 p-6">
                 <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
-                  <h2 className="text-xl font-bold text-slate-100">{item.role}</h2>
+                  <div>
+                    <h2 className="text-xl font-bold text-slate-100">{item.role}</h2>
+                    <p className="mt-1 font-mono text-sm text-slate-400">{item.company}</p>
+                  </div>
                   <span className="font-mono text-sm text-cyan-300">{item.period}</span>
                 </div>
                 <p className="leading-7 text-slate-400">{item.detail}</p>
