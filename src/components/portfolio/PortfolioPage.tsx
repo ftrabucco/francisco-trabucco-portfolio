@@ -25,6 +25,7 @@ const profile = {
   github: "https://github.com/ftrabucco",
   email: "trabucco.francisco@gmail.com",
   resume: "/SDET_Francisco_Trabucco_CV_en.pdf",
+  photo: "/francisco-trabucco.jpg",
 };
 
 const copy = {
@@ -336,7 +337,16 @@ export function PortfolioPage() {
       <section id="sobre-mi" className="border-y border-slate-800 bg-slate-950 px-5 py-20 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[320px_minmax(0,1fr)]">
           <SectionTitle icon={<Sparkles className="h-5 w-5" />} title={t.aboutTitle} />
-          <p className="max-w-4xl text-xl font-semibold leading-9 text-slate-300">{t.about}</p>
+          <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_340px]">
+            <p className="max-w-4xl text-xl font-semibold leading-9 text-slate-300">{t.about}</p>
+            <div className="portfolio-photo-frame justify-self-start lg:justify-self-end">
+              <img
+                src={profile.photo}
+                alt="Francisco Trabucco"
+                className="h-full w-full rounded-md object-cover object-[50%_34%]"
+              />
+            </div>
+          </div>
         </div>
       </section>
 

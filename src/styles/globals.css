@@ -158,6 +158,27 @@
     background-color: rgba(15, 23, 42, 0.78);
     box-shadow: 0 18px 42px rgba(8, 145, 178, 0.14);
   }
+
+  .portfolio-photo-frame {
+    position: relative;
+    width: min(100%, 340px);
+    aspect-ratio: 4 / 5;
+  }
+
+  .portfolio-photo-frame::before {
+    content: "";
+    position: absolute;
+    inset: 22px -18px -18px 22px;
+    border: 3px solid rgba(34, 211, 238, 0.9);
+    border-radius: 6px;
+  }
+
+  .portfolio-photo-frame img {
+    position: relative;
+    z-index: 1;
+    border: 1px solid rgba(148, 163, 184, 0.24);
+    box-shadow: 0 24px 56px rgba(8, 145, 178, 0.16);
+  }
 }
 
 @keyframes portfolio-reveal {
