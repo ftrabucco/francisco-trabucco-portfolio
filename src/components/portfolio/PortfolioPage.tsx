@@ -30,29 +30,79 @@ const profile = {
 
 const copy = {
   es: {
-    nav: ["Sobre mi", "Skills", "Experiencia", "Proyectos", "Contacto"],
+    nav: ["Sobre mí", "Skills", "Experiencia", "Proyectos", "Contacto"],
     resume: "CV",
     language: "Idioma",
     greeting: "Hola, soy",
     name: profile.name,
     title: "SDET y QA Automation para sistemas backend confiables.",
     description:
-      "Tengo 7+ anos construyendo automatizacion de pruebas para APIs, microservicios y productos distribuidos. Trabajo con Java, RestAssured, Playwright, Postman/Newman, TypeScript, SQL y CI/CD para acelerar feedback y mejorar la confianza de cada release.",
+      "Tengo 7+ años construyendo automatización de pruebas para APIs, microservicios y productos distribuidos. Trabajo con Java, RestAssured, Playwright, Postman/Newman, TypeScript, SQL y CI/CD para acelerar feedback y mejorar la confianza de cada release.",
     availability:
       "Abierto a oportunidades remotas como SDET, QA Automation Engineer o Quality Engineer.",
     viewResume: "Ver CV",
     contactMe: "Contactar",
-    aboutTitle: "Sobre mi",
+    aboutTitle: "Sobre mí",
     about: [
-      "Soy SDET y QA Automation Engineer con una base tecnica fuerte y una forma de trabajo muy orientada al producto. Me gusta entender como se comporta un sistema por dentro, detectar riesgos reales y transformar pruebas repetitivas en feedback confiable para el equipo.",
-      "Mi experiencia esta especialmente enfocada en API testing, microservicios, frameworks de regresion, integracion con CI/CD y reporting claro. Trabajo cerca de equipos de backend y producto, combinando criterio de QA con desarrollo para que cada release llegue con mas visibilidad, trazabilidad y confianza.",
+      "Soy SDET y QA Automation Engineer con una base técnica fuerte y una forma de trabajo muy orientada al producto. Me gusta entender cómo se comporta un sistema por dentro, detectar riesgos reales y transformar pruebas repetitivas en feedback confiable para el equipo.",
+      "Mi experiencia está especialmente enfocada en API testing, microservicios, frameworks de regresión, integración con CI/CD y reporting claro. Trabajo cerca de equipos de backend y producto, combinando criterio de QA con desarrollo para que cada release llegue con más visibilidad, trazabilidad y confianza.",
     ],
     skillsTitle: "Skills",
     experienceTitle: "Experiencia",
     projectsTitle: "Proyectos",
     contactTitle: "Contacto",
     contactText:
-      "Si queres conversar sobre QA Automation, SDET o una oportunidad profesional, podemos conectar por LinkedIn.",
+      "Si querés conversar sobre QA Automation, SDET o una oportunidad profesional, podemos conectar por LinkedIn.",
+    experience: [
+      {
+        role: "QA Automation / SDET",
+        company: "IncluIT",
+        period: "2022 - Presente",
+        detail:
+          "Modernización de suites de regresión API migrando Postman/Newman hacia frameworks Java + RestAssured. Trabajo con clientes reutilizables, configuración compartida, assertions estructuradas, reporting con Allure e integración con pipelines CI/CD.",
+      },
+      {
+        role: "QA Automation Engineer",
+        company: "Cognizant",
+        period: "2021 - 2022",
+        detail:
+          "Automatización de pruebas con Python, Selenium y pytest, soporte a procesos CI/CD con Azure Repos, Azure Pipelines y Test Plans, y validaciones API e integraciones sobre microservicios.",
+      },
+      {
+        role: "QA Automation Engineer",
+        company: "Globant",
+        period: "2020 - 2021",
+        detail:
+          "Automatización mobile para iOS y Android usando Java, Appium, Maven, TestNG y Cucumber. Ejecución de suites smoke, sanity y regresión integradas con Jenkins y flujos de trabajo Git.",
+      },
+      {
+        role: "QA Analyst",
+        company: "Vates",
+        period: "2019 - 2020",
+        detail:
+          "Diseño y ejecución de casos de prueba para aplicaciones web, testing exploratorio, funcional, regresión y end-to-end, con validación de datos en PL/SQL y gestión de trabajo en Jira.",
+      },
+    ],
+    projects: [
+      {
+        title: "Personal Finance App",
+        description:
+          "Aplicación propia para gestionar ingresos, gastos, tarjetas, proyecciones y salud financiera.",
+        stack: "Next.js, TypeScript, APIs, UX",
+      },
+      {
+        title: "Automation Framework",
+        description:
+          "Base reusable para regresión API con clientes tipados, configuración por ambiente, assertions estructuradas y reportes accionables.",
+        stack: "Java, RestAssured, Allure, Jenkins",
+      },
+      {
+        title: "Release Quality Checks",
+        description:
+          "Validaciones automáticas para ambientes, configuración y smoke tests posteriores al despliegue.",
+        stack: "CI/CD, AWS, Smoke testing",
+      },
+    ],
   },
   en: {
     nav: ["About", "Skills", "Experience", "Projects", "Contact"],
@@ -78,6 +128,56 @@ const copy = {
     contactTitle: "Contact",
     contactText:
       "If you want to talk about QA Automation, SDET or a professional opportunity, we can connect on LinkedIn.",
+    experience: [
+      {
+        role: "QA Automation / SDET",
+        company: "IncluIT",
+        period: "2022 - Present",
+        detail:
+          "Modernized API regression suites by migrating Postman/Newman collections into Java + RestAssured frameworks. I work with reusable clients, shared configuration, structured assertions, Allure reporting, and CI/CD pipeline integration.",
+      },
+      {
+        role: "QA Automation Engineer",
+        company: "Cognizant",
+        period: "2021 - 2022",
+        detail:
+          "Built test automation with Python, Selenium, and pytest, supported CI/CD processes with Azure Repos, Azure Pipelines, and Test Plans, and validated APIs and integrations across microservices.",
+      },
+      {
+        role: "QA Automation Engineer",
+        company: "Globant",
+        period: "2020 - 2021",
+        detail:
+          "Worked on mobile automation for iOS and Android using Java, Appium, Maven, TestNG, and Cucumber. Executed smoke, sanity, and regression suites integrated with Jenkins and Git workflows.",
+      },
+      {
+        role: "QA Analyst",
+        company: "Vates",
+        period: "2019 - 2020",
+        detail:
+          "Designed and executed test cases for web applications, including exploratory, functional, regression, and end-to-end testing, with PL/SQL data validation and Jira-based workflow management.",
+      },
+    ],
+    projects: [
+      {
+        title: "Personal Finance App",
+        description:
+          "A personal application to manage income, expenses, cards, projections, and financial health.",
+        stack: "Next.js, TypeScript, APIs, UX",
+      },
+      {
+        title: "Automation Framework",
+        description:
+          "Reusable foundation for API regression with typed clients, environment-based configuration, structured assertions, and actionable reports.",
+        stack: "Java, RestAssured, Allure, Jenkins",
+      },
+      {
+        title: "Release Quality Checks",
+        description:
+          "Automated checks for environments, configuration, and post-deployment smoke testing.",
+        stack: "CI/CD, AWS, Smoke testing",
+      },
+    ],
   },
 };
 
@@ -105,60 +205,8 @@ const skills = [
   "Test Strategy",
 ];
 
-const experience = [
-  {
-    role: "QA Automation / SDET",
-    company: "IncluIT",
-    period: "2022 - Presente",
-    detail:
-      "Modernizacion de suites de regresion API migrando Postman/Newman hacia frameworks Java + RestAssured. Trabajo con clientes reutilizables, configuracion compartida, assertions estructuradas, reporting con Allure e integracion con pipelines CI/CD.",
-  },
-  {
-    role: "QA Automation Engineer",
-    company: "Cognizant",
-    period: "2021 - 2022",
-    detail:
-      "Automatizacion de pruebas con Python, Selenium y pytest, soporte a procesos CI/CD con Azure Repos, Azure Pipelines y Test Plans, y validaciones API e integraciones sobre microservicios.",
-  },
-  {
-    role: "QA Automation Engineer",
-    company: "Globant",
-    period: "2020 - 2021",
-    detail:
-      "Automatizacion mobile para iOS y Android usando Java, Appium, Maven, TestNG y Cucumber. Ejecucion de suites smoke, sanity y regresion integradas con Jenkins y flujos de trabajo Git.",
-  },
-  {
-    role: "QA Analyst",
-    company: "Vates",
-    period: "2019 - 2020",
-    detail:
-      "Diseno y ejecucion de casos de prueba para aplicaciones web, testing exploratorio, funcional, regresion y end-to-end, con validacion de datos en PL/SQL y gestion de trabajo en Jira.",
-  },
-];
-
-const projects = [
-  {
-    title: "Personal Finance App",
-    description:
-      "Aplicacion propia para gestionar ingresos, gastos, tarjetas, proyecciones y salud financiera.",
-    stack: "Next.js, TypeScript, APIs, UX",
-  },
-  {
-    title: "Automation Framework",
-    description:
-      "Base reusable para regresion API con clientes tipados, configuracion por ambiente, assertions estructuradas y reportes accionables.",
-    stack: "Java, RestAssured, Allure, Jenkins",
-  },
-  {
-    title: "Release Quality Checks",
-    description:
-      "Validaciones automaticas para ambientes, configuracion y smoke tests posteriores al despliegue.",
-    stack: "CI/CD, AWS, Smoke testing",
-  },
-];
-
 export function PortfolioPage() {
-  const [language, setLanguage] = useState<Language>("es");
+  const [language, setLanguage] = useState<Language>("en");
   const [bright, setBright] = useState(false);
 
   const t = copy[language];
@@ -388,7 +436,7 @@ export function PortfolioPage() {
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[320px_minmax(0,1fr)]">
           <SectionTitle icon={<BriefcaseBusiness className="h-5 w-5" />} title={t.experienceTitle} />
           <div className="space-y-4">
-            {experience.map((item) => (
+            {t.experience.map((item) => (
               <article key={`${item.company}-${item.role}`} className="portfolio-card rounded-md border border-slate-700 bg-slate-900/50 p-6">
                 <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
                   <div>
@@ -408,7 +456,7 @@ export function PortfolioPage() {
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[320px_minmax(0,1fr)]">
           <SectionTitle icon={<Globe2 className="h-5 w-5" />} title={t.projectsTitle} />
           <div className="grid gap-4 lg:grid-cols-3">
-            {projects.map((project) => (
+            {t.projects.map((project) => (
               <article key={project.title} className="portfolio-card rounded-md border border-slate-700 bg-slate-950/55 p-6">
                 <h2 className="text-xl font-bold text-slate-100">{project.title}</h2>
                 <p className="mt-4 min-h-28 leading-7 text-slate-400">{project.description}</p>
