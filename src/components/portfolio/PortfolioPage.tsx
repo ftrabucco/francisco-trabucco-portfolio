@@ -181,6 +181,7 @@ export function PortfolioPage() {
         event.currentTarget.style.setProperty("--portfolio-y", `${event.clientY}px`);
       }}
     >
+      <div className="portfolio-spotlight pointer-events-none fixed inset-0" />
       <div className="relative min-h-screen overflow-hidden">
         <div
           className="absolute inset-0 opacity-70"
@@ -190,7 +191,6 @@ export function PortfolioPage() {
               : "radial-gradient(circle at 18% 18%, rgba(14,165,233,.2), transparent 34%), linear-gradient(135deg, #081120 0%, #101a34 54%, #111827 100%)",
           }}
         />
-        <div className="portfolio-spotlight pointer-events-none absolute inset-0" />
         <div className="absolute left-4 top-28 hidden h-[78vh] w-px bg-cyan-300/25 lg:block" />
         <div className="absolute bottom-10 right-6 hidden rotate-180 text-xs tracking-[.28em] text-slate-400 [writing-mode:vertical-rl] lg:block">
           linkedin.com/in/francisco-trabucco
