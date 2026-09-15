@@ -22,8 +22,9 @@ const profile = {
   name: "Francisco Trabucco",
   shortName: "Francisco",
   linkedin: "https://www.linkedin.com/in/francisco-trabucco/",
-  email: "contacto@example.com",
-  resume: "/resume.pdf",
+  github: "https://github.com/ftrabucco",
+  email: "trabucco.francisco@gmail.com",
+  resume: "/SDET_Francisco_Trabucco_CV_en.pdf",
 };
 
 const copy = {
@@ -33,16 +34,16 @@ const copy = {
     language: "Idioma",
     greeting: "Hola, soy",
     name: profile.name,
-    title: "QA Automation y SDET para productos confiables.",
+    title: "SDET y QA Automation para sistemas backend confiables.",
     description:
-      "Diseno automatizacion, validaciones de API y flujos de CI/CD para que los equipos detecten riesgos antes y entreguen con mas confianza. Combino mirada de QA, criterio de desarrollo y foco en producto.",
+      "Tengo 7+ anos construyendo automatizacion de pruebas para APIs, microservicios y productos distribuidos. Trabajo con Java, RestAssured, Playwright, Postman/Newman, TypeScript, SQL y CI/CD para acelerar feedback y mejorar la confianza de cada release.",
     availability:
-      "Listo para nuevos desafios en test automation, calidad de producto y mejora continua.",
+      "Abierto a oportunidades remotas como SDET, QA Automation Engineer o Quality Engineer.",
     viewResume: "Ver CV",
     contactMe: "Contactar",
     aboutTitle: "Sobre mi",
     about:
-      "Trabajo desde una mirada tecnica y practica: entender el producto, detectar riesgos, automatizar lo repetible y hacer visible la calidad. Me interesa construir herramientas que le ahorren tiempo al equipo y mejoren la confianza de cada release.",
+      "Trabajo desde una mirada tecnica y practica: entender el producto, detectar riesgos, automatizar lo repetible y hacer visible la calidad. Mi foco principal esta en API testing, frameworks de regresion, integracion con CI, reporting claro y colaboracion cercana con equipos de backend y producto.",
     skillsTitle: "Skills",
     experienceTitle: "Experiencia",
     projectsTitle: "Proyectos",
@@ -56,16 +57,16 @@ const copy = {
     language: "Language",
     greeting: "Hello, I am",
     name: profile.name,
-    title: "QA Automation and SDET for reliable products.",
+    title: "SDET and QA Automation for reliable backend systems.",
     description:
-      "I design automation, API checks and CI/CD workflows so teams can spot risk earlier and ship with more confidence. I combine a QA mindset, development judgment and product focus.",
+      "I have 7+ years of experience building test automation for APIs, microservices and distributed products. I work with Java, RestAssured, Playwright, Postman/Newman, TypeScript, SQL and CI/CD to accelerate feedback and improve release confidence.",
     availability:
-      "Ready for new challenges in test automation, product quality and continuous improvement.",
+      "Open to remote opportunities as an SDET, QA Automation Engineer or Quality Engineer.",
     viewResume: "View resume",
     contactMe: "Contact",
     aboutTitle: "About",
     about:
-      "I work from a practical technical perspective: understand the product, detect risks, automate repeatable flows and make quality visible. I care about building tools that save team time and improve release confidence.",
+      "I work from a practical technical perspective: understand the product, detect risks, automate repeatable flows and make quality visible. My main focus is API testing, regression frameworks, CI integration, clear reporting and close collaboration with backend and product teams.",
     skillsTitle: "Skills",
     experienceTitle: "Experience",
     projectsTitle: "Projects",
@@ -77,8 +78,10 @@ const copy = {
 
 const skills = [
   "Playwright",
-  "Cypress",
+  "RestAssured",
+  "Selenium",
   "API Testing",
+  "Java",
   "TypeScript",
   "JavaScript",
   "Python",
@@ -87,8 +90,12 @@ const skills = [
   "AWS",
   "GitHub Actions",
   "Postman",
+  "Newman",
+  "Allure",
   "SQL",
-  "Next.js",
+  "Spring Boot",
+  "Node.js",
+  "JMeter",
   "Observability",
   "Test Strategy",
 ];
@@ -96,21 +103,21 @@ const skills = [
 const experience = [
   {
     role: "QA Automation / SDET",
-    period: "Actual",
+    period: "2022 - Presente",
     detail:
-      "Suites end-to-end, pruebas de API, manejo de datos de prueba y reportes que ayudan a bajar regresiones y acelerar feedback.",
+      "Modernizacion de suites de regresion API migrando Postman/Newman hacia frameworks Java + RestAssured, con clientes reutilizables, configuracion compartida, assertions estructuradas y reporting con Allure.",
   },
   {
     role: "Automation & CI/CD",
-    period: "Foco tecnico",
+    period: "IncluIT / equipos distribuidos",
     detail:
-      "Automatizacion de checks, ambientes de prueba y ejecucion en CI para que el feedback sea rapido y confiable.",
+      "Ejecucion diaria y manual de regresiones en SIT, STG y PROD mediante Jenkins y GitHub Actions, con foco en trazabilidad, evidencia de request/response y analisis rapido de fallas.",
   },
   {
-    role: "Quality Engineering",
-    period: "Producto",
+    role: "Backend & Quality Engineering",
+    period: "Microservicios",
     detail:
-      "Criterios de aceptacion, analisis de riesgo, testing exploratorio y colaboracion cercana con frontend, backend y negocio.",
+      "Contribucion en servicios backend con Node.js, Express, Java y Spring Boot, validando integraciones, datos, performance y comportamiento de sistemas distribuidos.",
   },
 ];
 
@@ -124,8 +131,8 @@ const projects = [
   {
     title: "Automation Framework",
     description:
-      "Base reusable para UI y API testing con fixtures, reportes y ejecucion pensada para CI.",
-    stack: "Playwright, TypeScript, GitHub Actions",
+      "Base reusable para regresion API con clientes tipados, configuracion por ambiente, assertions estructuradas y reportes accionables.",
+    stack: "Java, RestAssured, Allure, Jenkins",
   },
   {
     title: "Release Quality Checks",
@@ -262,6 +269,9 @@ export function PortfolioPage() {
             <a href={profile.linkedin} aria-label="LinkedIn" className="transition hover:text-cyan-300">
               <Linkedin className="h-6 w-6" />
             </a>
+            <a href={profile.github} aria-label="GitHub" className="transition hover:text-cyan-300">
+              <Code2 className="h-6 w-6" />
+            </a>
             <a href={`mailto:${profile.email}`} aria-label="Email" className="transition hover:text-cyan-300">
               <Mail className="h-6 w-6" />
             </a>
@@ -288,13 +298,13 @@ export function PortfolioPage() {
                 <ArrowUpRight className="h-4 w-4" />
               </a>
               <a
-                href={profile.linkedin}
+                href={profile.github}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex h-12 items-center gap-2 rounded-md bg-emerald-400 px-6 font-mono text-sm font-semibold text-slate-950 transition hover:bg-emerald-300"
               >
-                {t.contactMe}
-                <Linkedin className="h-4 w-4" />
+                GitHub
+                <Code2 className="h-4 w-4" />
               </a>
             </div>
 
@@ -397,7 +407,7 @@ export function PortfolioPage() {
                 href={`mailto:${profile.email}`}
                 className="inline-flex h-12 items-center gap-2 rounded-md border border-slate-600 px-6 font-mono text-sm font-bold text-slate-200 transition hover:border-cyan-300 hover:text-cyan-300"
               >
-                Email
+                {profile.email}
                 <Mail className="h-4 w-4" />
               </a>
             </div>

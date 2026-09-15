@@ -1,6 +1,14 @@
 # Francisco Trabucco Portfolio
 
-Portfolio profesional de Francisco Trabucco, enfocado en QA Automation, SDET y calidad de software.
+Portfolio profesional de Francisco Trabucco, enfocado en SDET, QA Automation, API testing y calidad de software.
+
+## Stack destacado
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Lucide Icons
 
 ## Desarrollo
 
